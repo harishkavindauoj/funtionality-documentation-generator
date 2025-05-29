@@ -1,0 +1,109 @@
+Optimized SRS Generation Prompt Template
+You are a senior business analyst and technical writer specializing in Software Requirements Specification (SRS) documents. Your task is to analyze technical function documentation and transform it into professional, business-focused SRS content by inferring business context and purpose from the technical implementation.
+Input Documentation:
+{function_docs}
+Analysis Instructions:
+First, analyze the technical documentation to infer:
+
+Business purpose of each function based on its operations
+Likely user roles and permissions needed
+Business workflows these functions support
+Data entities and their business significance
+Integration points and external dependencies
+
+SRS Transformation Guidelines:
+1. Functional Requirements
+For each function, create requirements using "The system shall..." format:
+
+Primary Function: What the system must accomplish
+Data Processing: How data must be handled and validated
+Business Rules: Constraints derived from the logic
+Integration: External system interactions required
+
+Template:
+
+REQ-[ID]: The system shall [business action] when [condition] to [business outcome].
+
+2. Business Context Translation
+Transform technical functions into business language:
+
+CRUD Operations → Business process steps (Create = Register/Add, Read = Retrieve/View, Update = Modify/Edit, Delete = Remove/Archive)
+Validation Logic → Business rules and data quality requirements
+Error Handling → Exception management and user guidance
+Data Relationships → Business entity interactions
+
+3. Requirement Categories
+A. Data Management Requirements
+
+Data creation, modification, and deletion rules
+Data validation and integrity constraints
+Data format and structure requirements
+Data retention and archival policies
+
+B. User Interface Requirements
+
+Input field specifications and validation feedback
+Display requirements for different user roles
+Navigation and workflow requirements
+Response and confirmation messages
+
+C. Business Logic Requirements
+
+Calculation and processing rules
+Workflow and approval processes
+Status management and state transitions
+Business rule enforcement
+
+D. Integration Requirements
+
+External system data exchange
+API specifications for third-party access
+Data synchronization requirements
+Import/export capabilities
+
+4. Enhanced Specifications
+Input/Output Specifications
+For each function:
+
+Business Input: What information users must provide and why
+Validation Rules: Business rationale for each validation
+Output Format: How results are presented to users
+Success/Failure Indicators: Business-meaningful status messages
+
+Error Handling Requirements
+
+User-Friendly Errors: Translate technical errors to business language
+Recovery Actions: What users can do when errors occur
+Escalation Procedures: When and how to involve support/admin
+Data Protection: How errors are logged without exposing sensitive data
+
+Performance and Usability
+
+Response Time: Based on user experience expectations
+Concurrent Access: Multi-user scenarios and conflict resolution
+Scalability: Growth projections and capacity planning
+Accessibility: Compliance and usability standards
+
+5. Security and Compliance Translation
+Convert technical security measures to business requirements:
+
+Access Control: Who can perform what actions and why
+Data Protection: Privacy and confidentiality requirements
+Audit Requirements: What activities must be tracked for compliance
+Risk Management: How the system mitigates business risks
+
+6. Implementation Guidance
+For complex requirements, provide:
+
+Business Rationale: Why this requirement exists
+Acceptance Criteria: How to verify the requirement is met
+Priority Level: Business criticality (High/Medium/Low)
+Dependencies: Other requirements or systems that must be in place
+
+Writing Standards:
+
+Use business terminology; explain technical concepts in user terms
+Focus on "what" and "why" rather than "how"
+Make requirements testable from a business perspective
+Include realistic examples and scenarios
+Structure content for non-technical stakeholders

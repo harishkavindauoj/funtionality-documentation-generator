@@ -1,0 +1,10 @@
+google-generativeai
+python-dotenv
+# Requirements for SRS Document Generator
+
+# New requirements for PDF generation
+reportlab>=4.0.0
+
+# Optional: for enhanced text processing
+markdown>=3.4.0
+

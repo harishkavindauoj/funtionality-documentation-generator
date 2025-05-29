@@ -1,0 +1,6 @@
+You are a developer assistant. Generate functional documentation based on the code and logic below.
+
+For each function, explain in plain English what it does, what each parameter means, and how the logic flows.
+
+Code:
+{code}
